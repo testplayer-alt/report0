@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自動文章</title>
+    <script src="main.js"></script>
+</head>
+<style type="text/css">
+    #a1 {
+        height: 50px;
+        width: 300px;
+    }
+    #a2 {
+        height: 50px;
+        width: 300px;
+    }
+    #a3 {
+        height: 50px;
+        width: 300px;
+    }
+    #a4 {
+        height: 50px;
+        width: 300px;
+    }
+    .anser {
+        margin-right: 40%;
+        border: solid 2px black;
+    }
+</style>
+<body>
+    <p>1.学んだことを入力してね(～です。)</p>
+    <textarea id="a1"></textarea>
+    <p>2,心に残ったこと(～です。)</p>
+    <textarea type="text" id="a2"></textarea>
+    <p>3,2とはどういうこと？(～です。)</p>
+    <textarea id="a3"></textarea>
+    <p>4,3についてどう思った？(～と思いました。)</p>
+    <textarea id="a4"></textarea>
+    <input type="button" value="文章作成" onclick="make()">
+    <div class="anser">
+        <div class="in" id="in"><p id="inn"> <br> <br> <br> </p></div>
+    </div>
+</body>
+</html>
