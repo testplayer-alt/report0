@@ -28,17 +28,25 @@
         margin-right: 40%;
         border: solid 2px black;
     }
+    #make {
+        color: rgb(0, 160, 160);
+    }
+    #clear {
+        margin-left: 20px;
+        color: red;
+    }
 </style>
 <body>
-    <p>1.学んだことを入力してね(～です。)</p>
-    <textarea id="a1"></textarea>
-    <p>2,心に残ったこと(～です。)</p>
-    <textarea type="text" id="a2"></textarea>
-    <p>3,2とはどういうこと？(～です。)</p>
-    <textarea id="a3"></textarea>
-    <p>4,3についてどう思った？(～と思いました。)</p>
-    <textarea id="a4"></textarea>
-    <input type="button" value="文章作成" onclick="make()">
+    <p>1.学んだことを入力してね(今回学んだことは～です。)</p>
+    <textarea id="a1" placeholder="入力してね"></textarea>
+    <p>2,心に残ったこと(心に残ったことは～です。)</p>
+    <textarea type="text" id="a2" placeholder="入力してね"></textarea>
+    <p>3,2を具体的に？((例えば)～です。)</p>
+    <textarea id="a3" placeholder="入力してね"></textarea>
+    <p>4,3についてどう思った？(これに対して～と思いました。)</p>
+    <textarea id="a4" placeholder="入力してね"></textarea>
+    <input id="make" type="button" value="文章作成" onclick="make()">
+    <input id="clear" type="button" value="入力欄を空にする" onclick="c()">
     <div class="anser">
         <div class="in" id="in"><p id="inn"> <br> <br> <br> </p></div>
     </div>
