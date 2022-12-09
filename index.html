@@ -24,9 +24,11 @@
         height: 50px;
         width: 300px;
     }
-    .anser {
+    #in {
         margin-right: 40%;
         border: solid 2px black;
+        height: 100px;
+        width: 500px;
     }
     #make {
         color: rgb(0, 160, 160);
@@ -45,10 +47,11 @@
     <textarea id="a3" placeholder="入力してね"></textarea>
     <p>4,3についてどう思った？(これに対して～と思いました。)</p>
     <textarea id="a4" placeholder="入力してね"></textarea>
-    <input id="make" type="button" value="文章作成" onclick="make()">
+    <input id="make" type="button" value="文章作成" onclick="make()" onclick="value()">
     <input id="clear" type="button" value="入力欄を空にする" onclick="c()">
     <div class="anser">
-        <div class="in" id="in"><p id="inn"> <br> <br> <br> </p></div>
+        <textarea class="in" id="in"></textarea>
     </div>
+    <p id="length">0文字</p>
 </body>
 </html>
