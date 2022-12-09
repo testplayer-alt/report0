@@ -13,7 +13,7 @@ function c() {
     c2 = document.getElementById('a2').value = "";
     c3 = document.getElementById('a3').value = "";
     c4 = document.getElementById('a4').value = "";
-    c5 = document.getElementById('in').innerHTML = '<p id="inn"> <br> <br> <br> </p>';
+    c5 = document.getElementById('in').value = '';
     console.log("削除しました");
 }
 
