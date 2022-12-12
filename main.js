@@ -18,7 +18,7 @@ function c() {
 }
 
 addEventListener('click', value);
-addEventListener('key', value);
+addEventListener('keydown', value);
 function value(){
     var countnumver = document.getElementById('in').value;
     console.log(countnumver.length);
